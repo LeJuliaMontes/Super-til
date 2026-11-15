@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --fondo: #faf6ef;
+  --superficie: #ffffff;
+  --superficie-2: #f2ece2;
+  --borde: #e4dbcc;
+  --tinta: #221d17;
+  --tinta-suave: #6b6156;
+  --acento: #b5472a;
+  --acento-tinta: #ffffff;
+  --acento-suave: #f7e3da;
+  --exito: #3f7a4f;
+  --exito-suave: #e1efe4;
+  --aviso: #8a5a00;
+  --aviso-suave: #fbefd5;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #17140f;
+    --superficie: #221e18;
+    --superficie-2: #2c2720;
+    --borde: #3a342b;
+    --tinta: #f2ece3;
+    --tinta-suave: #b3a898;
+    --acento: #ec8a68;
+    --acento-tinta: #1d120d;
+    --acento-suave: #3d2219;
+    --exito: #8cc79b;
+    --exito-suave: #1f3324;
+    --aviso: #f0c36b;
+    --aviso-suave: #3a2e14;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-fondo: var(--fondo);
+  --color-superficie: var(--superficie);
+  --color-superficie-2: var(--superficie-2);
+  --color-borde: var(--borde);
+  --color-tinta: var(--tinta);
+  --color-tinta-suave: var(--tinta-suave);
+  --color-acento: var(--acento);
+  --color-acento-tinta: var(--acento-tinta);
+  --color-acento-suave: var(--acento-suave);
+  --color-exito: var(--exito);
+  --color-exito-suave: var(--exito-suave);
+  --color-aviso: var(--aviso);
+  --color-aviso-suave: var(--aviso-suave);
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  min-height: 100dvh;
+}
+
+:focus-visible {
+  outline: 2px solid var(--acento);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .aparecer {
+    animation: aparecer 180ms ease-out;
+  }
+  @keyframes aparecer {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: none; }
+  }
+}
