@@ -59,7 +59,7 @@ Cuando encuentras una palabra que no conoces, la **apuntas en dos segundos** (si
 
 ### Versión 2
 
-- **Compartir desde otras apps** (Web Share Target): seleccionar una palabra en el navegador o en el lector → "Compartir" → Palabras Pendientes.
+- **Compartir desde otras apps** (Web Share Target): seleccionar una palabra en el navegador o en el lector → "Compartir" → Superútil.
 - **Umbral automático**: aviso cuando llegas a N palabras (configurable, p. ej. 10).
 - **Repaso espaciado**: tarjetas tipo flashcard con las palabras definidas que aún no marcaste como aprendidas.
 - **Exportar a Anki**.
